@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class User {
+    private String name;
+    public User(String name) {
+        this.name = name;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    }
+public class HelloWorld{
+     public static void main(String []args){
+        List<User> userList = new ArrayList<>();
+        userList.add(new User("user1"));
+        userList.add(new User("user2"));
+        userList.add(new User("user3"));
+        userList.add(new User("user4"));
+        userList.add(new User("user5"));
+        System.out.println(userList);
+       for(User userobj:userList){
+            System.out.println(userobj.getName());
+        }
+     }
+}
